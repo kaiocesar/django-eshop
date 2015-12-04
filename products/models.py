@@ -18,7 +18,6 @@ class Products(models.Model):
     status = models.BooleanField(verbose_name="Status", choices=STATUS_CHOICE)
 
 
-
 class ProductPhotos(models.Model):
     photografy = models.CharField(max_length=150)
     product = models.ForeignKey(Products)

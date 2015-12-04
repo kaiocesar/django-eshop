@@ -9,11 +9,10 @@ class PaymentsMethods(models.Model):
 
 
 class Sales(models.Model):
-    code = models.CharField(max_length='40', verbose_name="Code sales")
-    status = models.CharField(max_length='50', verbose_name="Status")
+    code = models.CharField(max_length=40, verbose_name="Code sales")
+    status = models.CharField(max_length=50, verbose_name="Status")
     payment_method = models.ForeignKey(PaymentsMethods, verbose_name="Payment Method")
     customer = models.ForeignKey('customers.Customers', "Customer")
-
 
 
 class SaleProducts(models.Model):
