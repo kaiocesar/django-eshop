@@ -1,2 +1,3 @@
-# django-eshop
+# Django e-shop
+
 Django Eletronic Shopping
