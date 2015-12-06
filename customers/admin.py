@@ -1,3 +1,7 @@
 from django.contrib import admin
+from customers.models import Customers
 
-# Register your models here.
+class CustomersAdmin(admin.ModelAdmin):
+	pass
+
+admin.site.register(Customers, CustomersAdmin)
