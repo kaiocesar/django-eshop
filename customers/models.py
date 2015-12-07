@@ -4,6 +4,7 @@ from django.db import models
 
 
 class Customers(models.Model):
+
     name = models.CharField(max_length=30, verbose_name="Name")
     cpf = models.CharField(max_length=14, verbose_name="CPF")
     rg = models.CharField(max_length=20, verbose_name="RG")
@@ -17,4 +18,3 @@ class Customers(models.Model):
     cellphone = models.CharField(max_length=12, verbose_name="Cellphone")
     description = models.TextField(verbose_name="Description")
     avatar = models.TextField(verbose_name="Avatar")
-

@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^about$', about),
     url(r'^contact$', contact),
     url(r'^register$', register_costumers),
+    url(r'^products', include('products.urls')),
 ]
