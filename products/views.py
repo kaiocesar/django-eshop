@@ -7,3 +7,8 @@ def index(request):
 	p = Products.objects.all()
 	products = {"products" : p}
 	return render(request, 'products/index.html', products)
+
+
+def details(request, product_id):
+	product = Products.objects.get(id=product_id)
+	return render(request, 'products/details.html', {'product':product})
