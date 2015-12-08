@@ -19,9 +19,9 @@ from website.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index, name="home"),
-    url(r'^about$', about),
-    url(r'^contact$', contact),
-    url(r'^register$', register_costumers),
+    url(r'^$', index, name="index"),
+    url(r'^about$', about, name="about"),
+    url(r'^contact$', contact, name="contact"),
+    url(r'^register$', register_costumers, name="register"),
     url(r'^products', include('products.urls')),
 ]

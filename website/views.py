@@ -1,14 +1,17 @@
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse
+from products.models import Products
 
 def index(request):
-	return HttpResponse("Home page")
+	return render(request, 'website/index.html')
 
 def about(request):
-	return HttpResponse("About")
+	return render(request, 'website/about.html')
 
 def contact(request):
-	return HttpResponse("Contact")
+	return render(request, 'website/contact.html')
 
 def register_costumers(request):
-	return HttpResponse("Register costumers")
+	return render(request, 'website/register.html')

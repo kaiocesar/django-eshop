@@ -1,10 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'base_products.html' %}
 {% block content %}
 
 
 	<h1 class="products">Product detail</h1>
 
-	<a href="{% url 'products:home' %}">Back</a>
+	<a href="{% url 'products:index' %}">Back</a>
 
 	{% if product %}
 		<h4 class="title">{{product.name}}</h4>
